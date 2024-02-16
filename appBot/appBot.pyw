@@ -57,7 +57,7 @@ while True:
             caminho_destino = 'X:\\XXX\\XXX' #Caminho destino da planilha
             if move_excel_file(caminho_planilha, caminho_destino) == 'OK':
                 window.Minimize()
-                subprocess.Popen(['pythonw', 'X:\\XXX\\XXX\\XXX'])
+                subprocess.Popen(['pythonw', 'X:\\XXX\\XXX\\appSistema.pyw'])
                 arquivoExcel = os.path.basename(caminho_planilha)
                 caminho = os.path.join(caminho_destino, arquivoExcel)
                 iniciarBot(caminho)
